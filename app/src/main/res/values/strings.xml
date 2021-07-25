@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lotin &amp; Krill</string>
+    <string name="krill_lotin"><![CDATA[Krill -> Lotin]]></string>
+    <string name="lotin_krill"><![CDATA[Lotin -> Krill]]></string>
+    <string name="dastur_haqida">Dastur haqida</string>
+</resources>

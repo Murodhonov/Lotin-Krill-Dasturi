@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/krill_lotin"
+        android:id="@+id/krill_lotin" />
+    <item
+        android:title="@string/lotin_krill"
+        android:id="@+id/lotin_krill"/>
+    <item
+        android:title="@string/dastur_haqida"
+        android:id="@+id/about"/>
+
+</menu>

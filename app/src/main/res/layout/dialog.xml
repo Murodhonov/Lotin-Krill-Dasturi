@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="300dp"
+        android:layout_height="420dp"
+        android:background="@drawable/stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:layout_constraintHorizontal_bias="0.95"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/purple_500"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/pen2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:tint="@color/purple_500"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lotin &amp; Krill\n\nLotin Krill Dasturi sizga matnlarni qulaylik bilan o'zgartirishga yordam beradi\n\nTelegram @Murodhonov"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+
+
+        <ImageView
+            android:id="@+id/telegram_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/telegram"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/github_img"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintWidth_percent="0.2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:tint="@color/purple_500"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/github_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/git"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintLeft_toRightOf="@id/telegram_img"
+            app:layout_constraintRight_toLeftOf="@id/facebook_img"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            app:layout_constraintVertical_bias="0.9"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintWidth_percent="0.2"
+            android:scaleType="center"
+            app:tint="@color/purple_500" />
+
+        <ImageView
+            android:id="@+id/facebook_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/face"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintLeft_toRightOf="@id/github_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintWidth_percent="0.2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:tint="@color/purple_500" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:text="Lotin &amp; Krill"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@id/image_1"
+            app:layout_constraintRight_toLeftOf="@id/more_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/white"
+            android:padding="10sp"
+            android:src="@drawable/pen2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/title_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/purple_500" />
+
+        <ImageView
+            android:id="@+id/more_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="10sp"
+            android:src="@drawable/more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edt_back"
+        android:gravity="top"
+        android:hint="Lotin"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@id/edt2"
+        app:layout_constraintHeight_percent="0.44"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        app:layout_constraintWidth_percent="0.99" />
+
+    <ImageView
+        android:id="@+id/del_1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toTopOf="@id/copy1"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt1"
+        app:layout_constraintRight_toRightOf="@id/edt1"
+        app:layout_constraintTop_toTopOf="@id/edt1"
+        app:layout_constraintVertical_bias="0.036"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:tint="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/copy1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/copy"
+        app:layout_constraintBottom_toTopOf="@id/paste1"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt1"
+        app:layout_constraintRight_toRightOf="@id/edt1"
+        app:layout_constraintTop_toBottomOf="@id/del_1"
+        app:layout_constraintVertical_bias="0.036"
+        app:tint="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/paste1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/pas"
+        app:layout_constraintBottom_toBottomOf="@id/edt1"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt1"
+        app:layout_constraintRight_toRightOf="@id/edt1"
+        app:layout_constraintTop_toBottomOf="@id/copy1"
+        app:layout_constraintVertical_bias="0.036"
+        app:tint="@color/purple_500" />
+
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edt_back"
+        android:gravity="top"
+        android:hint="Крилл"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.44"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt1"
+        app:layout_constraintWidth_percent="0.99" />
+
+    <ImageView
+        android:id="@+id/del_2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toTopOf="@id/copy2"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt2"
+        app:layout_constraintRight_toRightOf="@id/edt2"
+        app:layout_constraintTop_toTopOf="@id/edt2"
+        app:layout_constraintVertical_bias="0.036"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:tint="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/copy2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/copy"
+        app:layout_constraintBottom_toTopOf="@id/paste2"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt2"
+        app:layout_constraintRight_toRightOf="@id/edt2"
+        app:layout_constraintTop_toBottomOf="@id/del_2"
+        app:layout_constraintVertical_bias="0.036"
+        app:tint="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/paste2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/pas"
+        app:layout_constraintBottom_toBottomOf="@id/edt2"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintLeft_toLeftOf="@id/edt2"
+        app:layout_constraintRight_toRightOf="@id/edt2"
+        app:layout_constraintTop_toBottomOf="@id/copy2"
+        app:layout_constraintVertical_bias="0.036"
+        app:tint="@color/purple_500" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
